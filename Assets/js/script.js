@@ -1,6 +1,6 @@
 const gameBoard = (()=>{
   
-  const board = ["X","X","X","","","","","","",""];
+  const board = ["","","","","","","","","",""];
   
   return {
     board
@@ -45,10 +45,10 @@ const gamePlay = (() => {
     
     for (let combo of winConditions){
       const [a,b,c] = combo;
-      if (currentBoard[a]!="" && currentBoard[a] ===currentBoard[b] && currentBoard[a] ===currentBoard[c]){
-        return a;
+      if (currentBoard[a]!="" && currentBoard[a] === currentBoard[b] && currentBoard[a] === currentBoard[c]){
+        return true;
       } else if (currentBoard.every(item => item!="")){
-        return a;
+        return true;
       } else{
         return false;
       }
