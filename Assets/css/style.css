@@ -1,14 +1,22 @@
+body{
+background: rgb(17, 219, 198);
+ background: radial-gradient(circle, rgba(17, 219, 198, 1) 35%, rgba(0, 212, 255, 1) 100%);
+ color: white;
+
+}
 .wrapper {
  text-align: center;
+
 }
 
 button {
  margin-bottom: 20px;
  padding: 10px;
  border-radius: 30px;
- border: none;
- background-color: #770d29;
+ border: 1px solid white;
+ background-color: rgb(0, 212, 255, 1);
  color: white;
+ animation: pulse 1.2s ease infinite;
 
 }
 
@@ -16,12 +24,35 @@ button:hover {
  background-color: red;
 }
 
+.hidden{
+ display: none;
+}
+
+@keyframes pulse {
+ 0% {
+  transform: scale(1, 1);
+ }
+
+ 50% {
+  opacity: 0.3;
+ }
+
+ 100% {
+  transform: scale(1.5);
+  opacity: 0;
+ }
+}
+
+
 
 .grid-item {
  border: 1px solid black;
  text-align: center;
  font-size: 5rem;
  padding: 30px;
+ border-radius: 20px;
+ background-color: rgb(17, 219, 198);
+
 
 }
 
@@ -29,7 +60,12 @@ button:hover {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
  grid-template-rows: 1fr 1fr 1fr;
+ gap: 20px;
  max-width: 500px;
  height: 500px;
  margin: auto;
+ border: 5px solid  white;
+ border-radius: 20px;
+ padding: 20px;
+ background-color: rgb(0, 212, 255, 1);
 }
