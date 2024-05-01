@@ -1,4 +1,4 @@
-# TicTacToe
+# Tic Tac Toe
 
 ## Description
 This project is a simple game of tic tac toe. It demonstrates my use of the module pattern where each game function is neatly tucked into an object. This project was difficult for me but helped me get a better understanding of factory functions and closures.
